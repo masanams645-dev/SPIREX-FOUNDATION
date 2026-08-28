@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Programs | SpireX Foundation</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html" class="logo-area">
+
+        <img src="assets/logo.png"
+             alt="SpireX Foundation"
+             class="logo">
+
+    </a>
+
+
+    <nav class="nav-links" id="navLinks">
+        
+
+        <a href="index.html" class="active">
+            Programs
+        </a>
+
+        <a href="internship.html">
+            Internship
+        </a>
+
+        <a href="projects.html">
+            Projects
+        </a>
+
+        
+
+    </nav>
+
+
+    <button class="apply-btn"
+            onclick="openApplication()">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Apply Now
+
+    </button>
+
+
+    <button class="menu-btn"
+            onclick="toggleMenu()">
+
+        <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            SPIREX FOUNDATION
+
+        </span>
+
+
+        <h1>
+            Explore. Learn. Build. Impact.
+        </h1>
+
+
+        <p>
+            Discover programs designed to develop your
+            skills, creativity and career opportunities.
+        </p>
+
+    </div>
+
+</section>
+
+<section class="page-section">
+
+    <div class="section-heading">
+
+        <span>WHAT WE OFFER</span>
+
+        <h2>
+            Our Programs
+        </h2>
+
+        <p>
+            Learn new skills and gain practical experience
+            through our career-focused programs.
+        </p>
+
+    </div>
+
+
+
+    <div class="program-grid">
+
+
+
+        <article class="program-card">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+                    alt="Internship">
+
+            </div>
+
+
+            <div class="card-icon navy-icon">
+
+                <i class="fa-solid fa-briefcase"></i>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>
+                    Internship Programs
+                </h2>
+
+                <p>
+                    Gain real-world experience through
+                    industry-oriented internships.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Industry Mentorship
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Live Projects
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Skill Development
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Certificate
+                    </li>
+
+                </ul>
+
+
+                <div class="card-buttons">
+
+                    <button class="primary-btn"
+                            onclick="goToInternship()">
+
+                        Explore
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button class="secondary-btn"
+                            onclick="showDetails('Internship Programs')">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="program-card">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80"
+                    alt="Training">
+
+            </div>
+
+
+            <div class="card-icon gold-icon">
+
+                <i class="fa-solid fa-book-open"></i>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>
+                    Training Programs
+                </h2>
+
+                <p>
+                    Develop technical and professional
+                    skills through structured training.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Technical Training
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Career Development
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Practical Learning
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Expert Guidance
+                    </li>
+
+                </ul>
+
+
+                <div class="card-buttons">
+
+                    <button class="primary-btn"
+                            onclick="showDetails('Training Programs')">
+
+                        Explore
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button class="secondary-btn"
+                            onclick="showDetails('Training Programs')">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <article class="program-card">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+                    alt="Workshop">
+
+            </div>
+
+
+            <div class="card-icon navy-icon">
+
+                <i class="fa-solid fa-users"></i>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>
+                    Workshops
+                </h2>
+
+                <p>
+                    Participate in interactive workshops
+                    led by experienced professionals.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Expert Sessions
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Hands-on Learning
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Networking
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Certificates
+                    </li>
+
+                </ul>
+
+
+                <div class="card-buttons">
+
+                    <button class="primary-btn"
+                            onclick="showDetails('Workshops')">
+
+                        Explore
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button class="secondary-btn"
+                            onclick="showDetails('Workshops')">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+        <article class="program-card">
+
+            <div class="card-image">
+
+                <img
+                    src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                    alt="Projects">
+
+            </div>
+
+
+            <div class="card-icon gold-icon">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+
+            <div class="card-content">
+
+                <h2>
+                    Projects
+                </h2>
+
+                <p>
+                    Build practical projects and showcase
+                    your skills through real-world work.
+                </p>
+
+
+                <ul>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Real-world Problems
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Modern Technologies
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Team Collaboration
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        Portfolio Building
+                    </li>
+
+                </ul>
+
+
+                <div class="card-buttons">
+
+                    <button class="primary-btn"
+                            onclick="goToProjects()">
+
+                        View Projects
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button class="secondary-btn"
+                            onclick="showDetails('Projects')">
+
+                        View Details
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="stats">
+
+    <div class="stat">
+
+        <i class="fa-solid fa-users"></i>
+
+        <div>
+
+            <strong>1000+</strong>
+
+            <span>Students</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-folder-open"></i>
+
+        <div>
+
+            <strong>200+</strong>
+
+            <span>Projects</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-user-tie"></i>
+
+        <div>
+
+            <strong>25+</strong>
+
+            <span>Mentors</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="stat">
+
+        <i class="fa-solid fa-certificate"></i>
+
+        <div>
+
+            <strong>100%</strong>
+
+            <span>Certification</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer id="contact">
+
+    <p>
+        © 2026 SpireX Foundation. All Rights Reserved.
+    </p>
+
+</footer>
+
+<div class="modal"
+     id="infoModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn"
+                onclick="closeModal()">
+
+            &times;
+
+        </button>
+
+
+        <div class="modal-icon">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+        </div>
+
+
+        <h2 id="modalTitle">
+            Program Details
+        </h2>
+
+
+        <p id="modalText">
+            Program information
+        </p>
+
+
+        <button class="primary-btn modal-action"
+                onclick="openApplication()">
+
+            Apply Now
+
+            <i class="fa-solid fa-paper-plane"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<div class="modal"
+     id="applicationModal">
+
+    <div class="modal-box">
+
+        <button class="close-btn"
+                onclick="closeApplication()">
+
+            &times;
+
+        </button>
+
+
+        <h2>
+            Apply to SpireX Foundation
+        </h2>
+
+
+        <form onsubmit="submitApplication(event)">
+
+            <input type="text"
+                   id="appName"
+                   placeholder="Your Name"
+                   required>
+
+
+            <input type="email"
+                   id="appEmail"
+                   placeholder="Email Address"
+                   required>
+
+
+            <select id="appProgram"
+                    required>
+
+                <option value="">
+                    Select Program
+                </option>
+
+                <option>
+                    Internship
+                </option>
+
+                <option>
+                    Training
+                </option>
+
+                <option>
+                    Workshop
+                </option>
+
+                <option>
+                    Projects
+                </option>
+
+            </select>
+
+
+            <button type="submit"
+                    class="primary-btn">
+
+                Submit Application
+
+                <i class="fa-solid fa-check"></i>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<div class="modal" id="applicationModal">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
