@@ -6,7 +6,7 @@
     z-index: 1000;
     width: 100%;
     height: auto;
-    background: var(--primary);
+    background: var(--white);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -44,7 +44,7 @@
 
 .nav-link {
     position: relative;
-    color: var(--white);
+    color: var(--black);
     font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
@@ -66,7 +66,7 @@
 }
 
 .nav-link.active {
-    color: var(--white);
+    color: var(--accent);
 }
 
 .nav-link:hover::after,
