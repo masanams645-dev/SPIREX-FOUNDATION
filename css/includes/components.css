@@ -1,0 +1,166 @@
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+.navbar {
+    height: 78px;
+    padding: 0 4%;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand,
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image,
+.navbar-logo img {
+    width: 155px;
+    height: auto;
+    display: block;
+}
+
+.navigation,
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    list-style: none;
+}
+
+.navigation a,
+.nav-link {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.navigation a:hover,
+.nav-link:hover,
+.navigation .active,
+.nav-link.active {
+    color: var(--accent);
+}
+
+.menu-toggle,
+.menu-button {
+    display: none;
+    border: none;
+    background: transparent;
+    color: var(--primary);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   FOOTER STYLING
+   ========================================================================== */
+.footer {
+    width: 100%;
+    background: var(--dark);
+    color: var(--white);
+}
+
+.footer-container,
+.footer-main {
+    padding: 55px 7%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.3fr;
+    gap: 50px;
+}
+
+.footer-logo {
+    width: 170px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.footer-brand p {
+    max-width: 300px;
+    color: #B8C1CD;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.social-links,
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.social-links a,
+.social-icons a {
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+.social-links a:hover,
+.social-icons a:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--primary);
+}
+
+.footer-column h4 {
+    color: var(--white);
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.footer-column a,
+.footer-column p {
+    display: block;
+    color: #B8C1CD;
+    font-size: 12px;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--accent);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B8C1CD;
+    font-size: 11px;
+    background: var(--dark);
+}
+
+.footer-bottom a {
+    color: #B8C1CD;
+    margin-left: 20px;
+}
+
+.footer-bottom a:hover {
+    color: var(--accent);
+}
