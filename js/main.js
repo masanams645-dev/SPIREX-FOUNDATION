@@ -1,63 +1,16 @@
-async function loadComponent(containerId, filePath) {
+// main.js
+// Responsible ONLY for page behavior — mobile menu, active link state, icons.
+// Knows nothing about how or where the HTML it's controlling came from.
 
-    const container = document.getElementById(containerId);
-
-    if (!container) {
-        console.error(containerId + " not found");
-        return;
-    }
-
-    try {
-
-        const response = await fetch(filePath);
-
-        if (!response.ok) {
-            throw new Error(filePath + " could not be loaded");
-        }
-
-        const html = await response.text();
-
-        container.innerHTML = html;
-
-    } catch (error) {
-
-        console.error("Component loading error:", error);
-
-    }
-}
-
-
-async function loadComponents() {
-
-    await loadComponent(
-        "navbar-container",
-        "components/navbar.html"
-    );
-
-    await loadComponent(
-        "hero-container",
-        "components/hero.html"
-    );
-
-    await loadComponent(
-        "cards-container",
-        "components/cards.html"
-    );
-
-    await loadComponent(
-        "footer-container",
-        "components/footer.html"
-    );
-
+document.addEventListener("navbarLoaded", function () {
 
     if (typeof lucide !== "undefined") {
         lucide.createIcons();
     }
 
-
     setupNavbar();
 
-}
+});
 
 
 function setupNavbar() {
@@ -155,6 +108,3 @@ function setupNavbar() {
     });
 
 }
-
-
-loadComponents();
