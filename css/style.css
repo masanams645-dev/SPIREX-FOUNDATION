@@ -5,8 +5,6 @@
   --white: #ffffff;
   --text: #333;
 }
-
-/* RESET */
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -14,8 +12,6 @@ body {
   color: var(--text);
 }
 
-/* NAVBAR */
-/* NAVBAR */
 .navbar {
     background: #ffffff;
     display: flex;
@@ -25,7 +21,6 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
-/* NAV LINKS */
 .nav-links a {
     text-decoration: none;
     color: #0b2c4a;   /* DARK BLUE (important) */
@@ -34,12 +29,10 @@ body {
     position: relative;
 }
 
-/* ACTIVE (Programs style) */
 .nav-links a.active {
     color: #d4a017;   /* GOLD COLOR */
 }
 
-/* UNDERLINE EFFECT */
 .nav-links a.active::after {
     content: "";
     position: absolute;
@@ -50,25 +43,21 @@ body {
     left: 0;
 }
 
-/* NAVBAR CONTAINER FIX */
 .navbar-container {
   width: 100%;
   display: flex;
-  justify-content: center; /* 🔥 logo left, links right */
+  justify-content: center; 
   align-items: center;
 }
 
-/* NAV LINKS RIGHT SIDE */
 .nav-links {
   display: flex;
   align-items: center;
-  margin-left: auto; /* 🔥 push to right */
+  margin-left: auto; 
 }
 
-/* LOGO FIX */
-/* LOGO PERFECT SIZE */
 .navbar-logo {
-  height: 120px;   /* 👈 medium perfect size */
+  height: 120px;   
   display: flex;
   align-items: center;
 }
@@ -79,13 +68,9 @@ body {
   max-height: 120px;
   object-fit: contain;
 }
-
-/* HOVER */
 .nav-links a:hover {
-    color: #1a73e8;   /* blue hover */
+    color: #1a73e8;   
 }
-
-/* HERO */
 .hero {
   text-align: center;
   padding: 80px 20px 40px;
@@ -110,7 +95,6 @@ body {
   line-height: 1.7;
 }
 
-/* BUTTON (STRONG STYLE) */
 .btn {
   margin-top: 20px;
   padding: 12px 30px;
@@ -127,7 +111,6 @@ body {
   box-shadow: 0 10px 25px rgba(201,162,75,0.3);
 }
 
-/* SECTION */
 .section {
   padding: 50px 20px;
   text-align: center;
@@ -141,28 +124,21 @@ body {
   font-size: 28px;
 }
 
-/* ABOUT TEXT */
 .about-text {
   max-width: 720px;
   margin: auto;
   color: #555;
   line-height: 1.8;
 }
-
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
   margin-top: 25px;
 }
-
-/* CARD (ELEGANT + STRONG) */
 .card {
   background: var(--white);
   padding: 28px;
-
-  /* 🔥 Elegant curve */
   border-radius: 10px;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -172,8 +148,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
-/* 🔥 Premium hover glow */
 .card::before {
   content: "";
   position: absolute;
@@ -194,7 +168,6 @@ body {
   box-shadow: 0 20px 45px rgba(0,0,0,0.12);
 }
 
-/* CARD TEXT */
 .card h3 {
   font-size: 18px;
   color: var(--primary);
@@ -210,8 +183,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* FOOTER */
 .footer {
   background: var(--primary);
   color: white;
@@ -220,7 +191,6 @@ body {
   margin-top: 50px;
 }
 
-/* MOBILE */
 @media(max-width: 768px){
   .grid {
     grid-template-columns: 1fr;
