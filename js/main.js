@@ -2,6 +2,7 @@
 // Responsible ONLY for page behavior — mobile menu, active link state, icons.
 // Knows nothing about how or where the HTML it's controlling came from.
 
+// Navbar icons + navbar behavior — runs as soon as the navbar alone is ready.
 document.addEventListener("navbarLoaded", function () {
 
     if (typeof lucide !== "undefined") {
@@ -9,6 +10,19 @@ document.addEventListener("navbarLoaded", function () {
     }
 
     setupNavbar();
+
+});
+
+
+// Icons inside hero, cards, and footer — runs once THOSE finish loading.
+// Calling createIcons() again here is safe: it only converts whatever
+// data-lucide tags exist at that moment and leaves already-converted
+// navbar icons untouched.
+document.addEventListener("componentsLoaded", function () {
+
+    if (typeof lucide !== "undefined") {
+        lucide.createIcons();
+    }
 
 });
 

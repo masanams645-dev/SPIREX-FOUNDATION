@@ -33,8 +33,8 @@ async function loadComponent(containerId, filePath) {
 
 async function loadComponents() {
 
-    // Load the navbar first, on its own, and announce it separately
-    // the moment it's ready — don't make it wait on hero/cards/footer.
+    // Navbar loads first and announces itself separately,
+    // so it becomes interactive without waiting on the rest.
     await loadComponent(
         "navbar-container",
         "components/navbar.html"
@@ -43,7 +43,9 @@ async function loadComponents() {
     document.dispatchEvent(new Event("navbarLoaded"));
 
 
-    // Everything else can load after, independently.
+    // Everything else loads after, then announces itself once
+    // ALL of them are done — this is what covers icons inside
+    // the hero, cards, and footer sections.
     await loadComponent(
         "hero-container",
         "components/hero.html"
@@ -58,6 +60,8 @@ async function loadComponents() {
         "footer-container",
         "components/footer.html"
     );
+
+    document.dispatchEvent(new Event("componentsLoaded"));
 
 }
 
