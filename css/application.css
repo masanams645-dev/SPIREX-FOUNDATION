@@ -1,0 +1,457 @@
+/* ================= APPLICATION PAGE ================= */
+.application-hero {
+    padding: 80px 20px 60px;
+    text-align: center;
+}
+
+.application-hero h1 {
+    color: var(--navy);
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.application-hero h1 span {
+    color: var(--gold);
+}
+
+.application-hero p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.application-section {
+    padding: 20px 7% 90px;
+}
+
+.application-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 55px;
+}
+
+.application-info {
+    padding-top: 25px;
+}
+
+.application-info h2 {
+    color: var(--navy);
+    font-size: 35px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.application-info h2 span {
+    color: var(--gold);
+}
+
+.application-info > p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.benefit {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.benefit-icon {
+    min-width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+}
+
+.benefit h3 {
+    color: var(--navy);
+    font-size: 13px;
+}
+
+.benefit p {
+    color: var(--muted);
+    font-size: 10px;
+}
+
+/* ================= APPLICATION CARD & READ-ONLY ================= */
+.application-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(10, 30, 50, .07);
+}
+
+.form-heading {
+    margin-bottom: 25px;
+}
+
+.form-heading h2 {
+    color: var(--navy);
+    font-size: 22px;
+}
+
+.form-heading p {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.readonly-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.readonly-item {
+    display: flex;
+    gap: 14px;
+    padding: 17px;
+    background: #fcfcfa;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.readonly-icon {
+    min-width: 36px;
+    height: 36px;
+    background: var(--gold-light);
+    color: var(--gold);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.readonly-item h3 {
+    color: var(--navy);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.readonly-item p {
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.application-notice {
+    display: flex;
+    gap: 12px;
+    padding: 15px;
+    background: var(--gold-light);
+    border-radius: 9px;
+}
+
+.notice-icon {
+    color: var(--gold);
+    font-size: 17px;
+}
+
+.application-notice strong {
+    color: var(--navy);
+    font-size: 11px;
+}
+
+.application-notice p {
+    color: #77715f;
+    font-size: 10px;
+}
+
+.readonly-button {
+    display: block;
+    text-align: center;
+    padding: 13px;
+    background: var(--gold);
+    color: white;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ================= APPLICATION FORM CONTROLS ================= */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--navy);
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #deddd7;
+    border-radius: 7px;
+    background: #fcfcfa;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 11px;
+    outline: none;
+    transition: .2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px rgba(215, 168, 62, .10);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.field-note {
+    display: block;
+    color: #999;
+    font-size: 9px;
+    margin-top: 5px;
+}
+
+/* ================= RADIO BUTTONS ================= */
+.radio-group {
+    display: flex;
+    gap: 10px;
+}
+
+.radio-option {
+    flex: 1;
+    display: flex !important;
+    align-items: center;
+    gap: 7px;
+    padding: 11px 12px;
+    border: 1px solid #deddd7;
+    border-radius: 7px;
+    background: #fcfcfa;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.radio-option:hover {
+    border-color: var(--gold);
+}
+
+.radio-option input {
+    width: auto !important;
+    accent-color: var(--gold);
+}
+
+.radio-option span {
+    color: var(--text);
+    font-size: 10px;
+}
+
+/* ================= FILE UPLOAD ================= */
+.file-upload input {
+    display: none;
+}
+
+.file-upload > label {
+    min-height: 105px;
+    border: 1.5px dashed #d6d3c9;
+    border-radius: 9px;
+    background: #fcfcfa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+    transition: .2s;
+}
+
+.file-upload > label:hover {
+    border-color: var(--gold);
+    background: #faf7ed;
+}
+
+.upload-icon {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold-light);
+    color: var(--gold);
+    border-radius: 50%;
+    margin-bottom: 7px;
+    font-size: 16px;
+}
+
+.file-upload strong {
+    color: var(--navy);
+    font-size: 11px;
+}
+
+.file-upload small {
+    color: var(--muted);
+    font-size: 9px;
+    margin-top: 3px;
+}
+
+/* ================= CHECKBOX ================= */
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.5;
+    margin: 5px 0 20px;
+    cursor: pointer;
+}
+
+.checkbox input {
+    width: auto;
+    margin-top: 2px;
+    accent-color: var(--gold);
+}
+
+/* ================= SUBMIT BUTTON ================= */
+.submit-btn {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    background: var(--gold);
+    color: white;
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.submit-btn:hover {
+    background: #c99b38;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(215, 168, 62, .25);
+}
+
+.form-note {
+    text-align: center;
+    color: #999;
+    font-size: 9px;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+/* ================= SUCCESS POPUP ================= */
+.success-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(4, 20, 37, .65);
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+.success-overlay.show {
+    display: flex;
+}
+
+.success-box {
+    width: min(450px, 100%);
+    background: white;
+    border-radius: 17px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .2);
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 18px;
+    border-radius: 50%;
+    background: var(--gold-light);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.success-box h2 {
+    color: var(--navy);
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.success-box p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.success-box button {
+    margin-top: 22px;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 7px;
+    background: var(--gold);
+    color: white;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* ================= APPLICATION RESPONSIVE ================= */
+@media (max-width: 750px) {
+    .application-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    .application-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .application-hero h1 {
+        font-size: 36px;
+    }
+
+    .application-card {
+        padding: 23px;
+    }
+}
