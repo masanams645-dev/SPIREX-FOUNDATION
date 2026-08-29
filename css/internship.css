@@ -332,7 +332,7 @@
 .application-cta {
     margin: 60px 3%;
     padding: 50px 7%;
-    background: var(--navy);
+    background: var(--dark);
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
