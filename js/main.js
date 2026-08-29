@@ -161,4 +161,12 @@ function setupNavbar() {
 
     });
 
+    function closeSuccess() {
+  const successOverlay = document.getElementById('successMessage');
+  if (successOverlay) {
+    successOverlay.style.display = 'none';
+    successOverlay.classList.remove('active', 'show');
+  }
+}
+
 }
