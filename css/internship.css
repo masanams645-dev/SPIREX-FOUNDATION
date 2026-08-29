@@ -177,13 +177,13 @@
 
 .domain-card h3 {
     color: var(--navy);
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 9px;
 }
 
 .domain-card p {
     color: var(--muted);
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -225,7 +225,7 @@
     display: flex;
     gap: 9px;
     color: var(--muted);
-    font-size: 21px;
+    font-size: 14px;
     margin-bottom: 13px;
 }
 
@@ -244,10 +244,12 @@
 
 .detail-row strong {
     color: var(--navy);
+    font-size: 14px;
 }
 
 .detail-row span {
     color: var(--muted);
+    font-size: 14px;
 }
 
 /* ================= OUTCOMES ================= */
@@ -284,7 +286,7 @@
 
 .outcome-card p {
     color: var(--muted);
-    font-size: 18px;
+    font-size: 14px;
 }
 
 /* ================= PROCESS ================= */
@@ -323,7 +325,7 @@
 
 .process-card p {
     color: var(--muted);
-    font-size: 20px;
+    font-size: 14px;
 }
 
 /* ================= APPLICATION CTA ================= */
