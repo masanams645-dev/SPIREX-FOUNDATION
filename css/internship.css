@@ -357,7 +357,7 @@
 }
 
 .application-cta p {
-    color: #338ad5;
+    color: var(--white);
     font-size: 18px;
     margin-bottom: 20px;
 }
