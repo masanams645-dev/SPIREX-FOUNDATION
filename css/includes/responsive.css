@@ -1,162 +1,11 @@
-@import url("./includes/Variables.css");
-@import url("./includes/Reset.css");
-@import url("./includes/utilities.css");
-@import url("./includes/components.css");
-@import url("./includes/responsive.css");
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
 
-/* 1. ROOT VARIABLES */
-
-:root {
-    --primary: #0B2545;
-    --dark: #081B34;
-    --accent: #C9A24B;
-    --navbar: #111827;
-
-
-    --cream: #FBF3DF;
-    --white: #FFFFFF;
-
-
-    --text: #3F3A34;
-    --text-light: #6F6A62;
-    --text-dark: #1F1A14;
-
-    --border: rgba(11, 37, 69, 0.12);
-
-    --card-shadow: 0 5px 20px rgba(8, 27, 52, 0.08);
-    --card-hover-shadow: 0 15px 40px rgba(8, 27, 52, 0.12);
-
-    --radius-lg: 20px;
-}
-
-
-/* 2. RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    height: auto;
-    min-height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-body {
-    width: 100%;
-    height: auto;
-    min-height: 100%;
-    font-family: "Poppins", sans-serif;
-    color: var(--text);
-    background: var(--cream);
-    line-height: 1.6;
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-button,
-input,
-textarea,
-select {
-    font-family: inherit;
-}
-
-button {
-    cursor: pointer;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-
-/* 3. COMMON CONTAINER */
-
-.container {
-    width: 100%;
-    margin: 0;
-}
-
-
-/* 4. BUTTONS */
-
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    padding: 12px 22px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background 0.3s ease,
-        color 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.btn svg {
-    width: 16px;
-    height: 16px;
-}
-
-.btn-gold {
-    color: var(--primary);
-    background: var(--accent);
-    border: 1px solid var(--accent);
-    box-shadow: 0 8px 20px rgba(201, 162, 75, 0.18);
-}
-
-.btn-gold:hover {
-    transform: translateY(-2px);
-    background: #D4AF5E;
-    box-shadow: 0 12px 28px rgba(201, 162, 75, 0.28);
-}
-
-.btn-outline {
-    color: var(--primary);
-    background: transparent;
-    border: 1px solid rgba(11, 37, 69, 0.25);
-}
-
-.btn-outline:hover {
-    color: var(--white);
-    background: var(--primary);
-    border-color: var(--primary);
-    transform: translateY(-2px);
-}
-
-
-
-
-
-
-/* 13. BACKGROUNDS */
-
-.bg-white {
-    width: 100%;
-    background: var(--cream);
-}
-
-
-
-
-/* 17. TABLET */
-
+/* --------------------------------------------------------------------------
+   1. TABLET BREAKPOINT (max-width: 1100px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 1100px) {
-
     .hero-container {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -169,20 +18,13 @@ img {
         margin-right: auto;
     }
 
-    .hero-badge {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+    .hero-badge,
     .hero-description {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .hero-actions {
-        justify-content: center;
-    }
-
+    .hero-actions,
     .hero-benefits {
         justify-content: center;
     }
@@ -207,7 +49,8 @@ img {
         max-width: 700px;
     }
 
-    .footer-container {
+    .footer-container,
+    .footer-main {
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 45px;
         row-gap: 45px;
@@ -218,22 +61,23 @@ img {
     }
 }
 
-
-/* 18. MOBILE */
-
+/* --------------------------------------------------------------------------
+   2. MOBILE BREAKPOINT (max-width: 700px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 700px) {
-
     .navbar-container {
         min-height: 68px;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .navbar-logo img {
+    .navbar-logo img,
+    .logo-image {
         width: 125px;
     }
 
-    .nav-links {
+    .nav-links,
+    .navigation {
         position: absolute;
         top: 68px;
         left: 0;
@@ -245,33 +89,28 @@ img {
         padding: 15px 20px 20px;
         background: rgba(250, 248, 243, 0.98);
         border-bottom: 1px solid var(--border);
-        box-shadow: var(--shadow-md);
+        box-shadow: 0 10px 25px rgba(8, 27, 52, 0.1);
     }
 
-    .nav-links.active {
+    .nav-links.active,
+    .mobile-menu.show {
         display: flex;
     }
 
-    .nav-link {
+    .nav-link,
+    .navigation a {
         padding: 11px 5px;
         color: var(--primary);
         font-size: 13px;
     }
 
-    .nav-link:hover,
-    .nav-link.active {
-        color: var(--primary);
-    }
-
-    .nav-link::after {
+    .navbar-apply,
+    .nav-button {
         display: none;
     }
 
-    .navbar-apply {
-        display: none;
-    }
-
-    .menu-toggle {
+    .menu-toggle,
+    .menu-button {
         display: flex;
     }
 
@@ -281,10 +120,7 @@ img {
 
     .hero-container {
         min-height: auto;
-        padding-top: 55px;
-        padding-bottom: 60px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 55px 5% 60px;
         gap: 45px;
     }
 
@@ -364,10 +200,7 @@ img {
     }
 
     .section {
-        padding-top: 70px;
-        padding-bottom: 70px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding: 70px 5%;
     }
 
     .section-heading {
@@ -469,13 +302,14 @@ img {
         padding-bottom: 0;
     }
 
-    .footer-container {
+    .footer-container,
+    .footer-main {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 25px;
         row-gap: 30px;
-        padding: 40px 7% 40px;
+        padding: 40px 7%;
         overflow: visible;
     }
 
@@ -502,21 +336,18 @@ img {
         line-height: 1.6;
     }
 
-    .social-links {
+    .social-links,
+    .social-icons {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-top: 15px;
     }
 
-    .social-links a {
+    .social-links a,
+    .social-icons a {
         width: 34px;
         height: 34px;
-    }
-
-    .social-links svg {
-        width: 16px;
-        height: 16px;
     }
 
     .footer-column:nth-child(2) {
@@ -571,24 +402,7 @@ img {
         font-weight: 700;
     }
 
-    .footer-contact-item {
-        width: 100%;
-        display: flex;
-        align-items: flex-start;
-        gap: 8px;
-        color: #B8C1CD;
-        font-size: 12px;
-        line-height: 1.5;
-    }
-
-    .footer-contact-item svg {
-        width: 16px;
-        height: 16px;
-        flex-shrink: 0;
-        color: var(--accent);
-        margin-top: 2px;
-    }
-
+    .footer-contact-item,
     .footer-contact a {
         width: 100%;
         display: flex;
@@ -599,6 +413,7 @@ img {
         line-height: 1.5;
     }
 
+    .footer-contact-item svg,
     .footer-contact a svg {
         width: 16px;
         height: 16px;
@@ -614,7 +429,7 @@ img {
         justify-content: center;
         gap: 10px;
         position: relative;
-        padding: 18px 20px 230px;
+        padding: 18px 20px;
         margin-bottom: 0;
         border-top: 1px solid rgba(255,255,255,0.15);
         background: var(--dark);
@@ -634,11 +449,10 @@ img {
     }
 }
 
-
-/* 19. SMALL MOBILE */
-
+/* --------------------------------------------------------------------------
+   3. SMALL MOBILE BREAKPOINT (max-width: 400px)
+   -------------------------------------------------------------------------- */
 @media (max-width: 400px) {
-
     .hero-title {
         font-size: 34px;
     }
@@ -656,10 +470,7 @@ img {
         padding: 8px 10px;
     }
 
-    .floating-card-top {
-        right: -5px;
-    }
-
+    .floating-card-top,
     .floating-card-bottom {
         right: -5px;
     }
@@ -680,7 +491,8 @@ img {
         font-size: 30px;
     }
 
-    .footer-container {
+    .footer-container,
+    .footer-main {
         padding-left: 6%;
         padding-right: 6%;
     }

@@ -1,0 +1,24 @@
+/* ==========================================================================
+   DESIGN TOKENS & VARIABLES
+   ========================================================================== */
+:root {
+    --primary: #0B2545;
+    --dark: #081B34;
+    --accent: #C9A24B;
+    --navbar: #111827;
+
+    --cream: #FBF3DF;
+    --white: #FFFFFF;
+    --gold-light: #f7efdc;
+
+    --text: #3F3A34;
+    --text-light: #6F6A62;
+    --text-dark: #1F1A14;
+
+    --border: rgba(11, 37, 69, 0.12);
+
+    --card-shadow: 0 5px 20px rgba(8, 27, 52, 0.08);
+    --card-hover-shadow: 0 15px 40px rgba(8, 27, 52, 0.12);
+
+    --radius-lg: 20px;
+}
