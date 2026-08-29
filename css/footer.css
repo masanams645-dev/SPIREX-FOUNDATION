@@ -39,8 +39,10 @@
     max-width: 170px;
     display: block;
     object-fit: contain;
+    border: 3px solid #C9A24B;
+    border-radius: 25% ;
+    box-shadow: 0 8px 48px #C9A24B;
 }
-
 .footer-brand p {
     max-width: 390px;
     margin-top: 20px;
