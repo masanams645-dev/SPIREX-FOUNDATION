@@ -940,3 +940,23 @@ footer {
   font-size: 15px;
   color: #ffffff;
 }
+
+.modal-content {
+    background-color: var(--white);
+    /* Clean solid accent border */
+    border: 2px solid var(--accent);
+    padding: 32px 28px;
+    
+    /* Fixed pixel radius prevents distorted elliptical corners */
+    border-radius: 16px;
+    
+    /* Layered depth with a subtle gold accent glow */
+    box-shadow: 
+        0 20px 40px -10px rgba(8, 27, 52, 0.22),
+        0 0 20px rgba(201, 162, 75, 0.2);
+        
+    /* Smooth interaction transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}

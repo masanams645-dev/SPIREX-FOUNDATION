@@ -1,974 +1,649 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Projects | SpireX Foundation</title>
 
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="../css/programsProjects.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/programsProjects.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
 
-</head>
+  <body>
+    <div id="navbar-container"></div>
 
-
-<body>
-
-<div id="navbar-container"></div>
-
-<section class="hero">
-
-    <div class="hero-content">
-
+    <section class="hero">
+      <div class="hero-content">
         <span class="hero-label">
+          <i class="fa-solid fa-laptop-code"></i>
 
-            <i class="fa-solid fa-laptop-code"></i>
-
-            PROJECT OPPORTUNITIES
-
+          PROJECT OPPORTUNITIES
         </span>
 
-
-        <h1>
-            Build Real-World Projects
-        </h1>
-
+        <h1>Build Real-World Projects</h1>
 
         <p>
-            Choose a project, learn through hands-on
-            development and build a portfolio that
-            showcases your skills.
+          Choose a project, learn through hands-on development and build a
+          portfolio that showcases your skills.
         </p>
+      </div>
+    </section>
 
-    </div>
+    <section class="page-section">
+      <div class="section-heading">
+        <span> LEARN BY BUILDING </span>
 
-</section>
-
-<section class="page-section">
-
-    <div class="section-heading">
-
-        <span>
-            LEARN BY BUILDING
-        </span>
-
-        <h2>
-            Projects We Offer
-        </h2>
+        <h2>Projects We Offer</h2>
 
         <p>
-            Explore beginner-friendly to advanced
-            frontend projects designed to strengthen
-            your practical development skills.
+          Explore beginner-friendly to advanced frontend projects designed to
+          strengthen your practical development skills.
         </p>
+      </div>
 
-    </div>
-
-    <div class="project-controls">
-
+      <div class="project-controls">
         <div class="search-box">
+          <input
+            type="text"
+            id="projectSearch"
+            placeholder="Search projects..."
+          />
 
-            <input
-                type="text"
-                id="projectSearch"
-                placeholder="Search projects...">
-
-            <button
-                type="button"
-                onclick="searchProjects()">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-            </button>
-
+          <button type="button" onclick="searchProjects()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
+      </div>
 
-    </div>
+      <div class="project-grid">
+        <article class="project-card" data-name="personal portfolio website">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
+              alt="Personal Portfolio Website"
+            />
+          </div>
 
-    <div class="project-grid">
-        <article
-            class="project-card"
-            data-name="personal portfolio website">
+          <div class="project-content">
+            <span class="project-category"> FRONTEND DEVELOPMENT </span>
 
-            <div class="project-image">
+            <h3>Personal Portfolio Website</h3>
 
-                <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80"
-                    alt="Personal Portfolio Website">
+            <p>
+              Create a professional portfolio to showcase your skills, projects,
+              education and achievements.
+            </p>
 
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Beginner
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                3-5 Days
+              </span>
             </div>
 
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    FRONTEND DEVELOPMENT
-                </span>
-
-                <h3>
-                    Personal Portfolio Website
-                </h3>
-
-                <p>
-                    Create a professional portfolio to
-                    showcase your skills, projects,
-                    education and achievements.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Beginner
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        3-5 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Personal Portfolio Website')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Personal Portfolio Website')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
             </div>
 
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Personal Portfolio Website')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Personal Portfolio Website')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-name="weather card app">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=900&q=80"
+              alt="Weather Card App"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> API / JAVASCRIPT </span>
+
+            <h3>Weather Card / App</h3>
+
+            <p>
+              Build a weather application that displays real-time weather
+              information using an API.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Intermediate
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                4-6 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>API</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Weather Card / App')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Weather Card / App')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-name="simple calculator">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=900&q=80"
+              alt="Simple Calculator"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> JAVASCRIPT </span>
+
+            <h3>Simple Calculator</h3>
+
+            <p>
+              Create a responsive calculator with clean UI and functional
+              arithmetic operations.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Beginner
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                2-3 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Simple Calculator')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Simple Calculator')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-name="movie search app">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80"
+              alt="Movie Search App"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> API PROJECT </span>
+
+            <h3>Movie Search App</h3>
+
+            <p>
+              Build a movie discovery application with search, posters, ratings
+              and movie information.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Intermediate
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                5-7 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>API</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Movie Search App')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Movie Search App')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-name="e-commerce mini-store">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
+              alt="E-Commerce Mini Store"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> FRONTEND DEVELOPMENT </span>
+
+            <h3>E-Commerce Mini-Store</h3>
+
+            <p>
+              Design a modern online store with products, pricing, cart
+              interactions and responsive layouts.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Intermediate
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                7-10 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('E-Commerce Mini-Store')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('E-Commerce Mini-Store')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-name="to-do task manager">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80"
+              alt="To Do Task Manager"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> FRONTEND DEVELOPMENT </span>
+
+            <h3>To-Do / Task Manager</h3>
+
+            <p>
+              Create a productivity application to add, edit, complete and
+              delete daily tasks.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Beginner
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                3-5 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('To-Do / Task Manager')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('To-Do / Task Manager')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </article>
+        <article class="project-card" data-name="expense tracker">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
+              alt="Expense Tracker"
+            />
+          </div>
+
+          <div class="project-content">
+            <span class="project-category"> JAVASCRIPT </span>
+
+            <h3>Expense Tracker</h3>
+
+            <p>
+              Manage income and expenses with categories, totals and an
+              interactive dashboard.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Intermediate
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                5-7 Days
+              </span>
+            </div>
+
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Expense Tracker')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Expense Tracker')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </article>
 
         <article
-            class="project-card"
-            data-name="weather card app">
+          class="project-card"
+          data-name="online quiz examination system"
+        >
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80"
+              alt="Online Quiz Examination System"
+            />
+          </div>
 
-            <div class="project-image">
+          <div class="project-content">
+            <span class="project-category"> WEB APPLICATION </span>
 
-                <img
-                    src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=900&q=80"
-                    alt="Weather Card App">
+            <h3>Online Quiz / Examination System</h3>
 
+            <p>
+              Develop an interactive online exam system with questions, timer,
+              submission and instant results.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Advanced
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                7-10 Days
+              </span>
             </div>
 
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    API / JAVASCRIPT
-                </span>
-
-                <h3>
-                    Weather Card / App
-                </h3>
-
-                <p>
-                    Build a weather application that
-                    displays real-time weather information
-                    using an API.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Intermediate
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        4-6 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Weather Card / App')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Weather Card / App')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
             </div>
 
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Online Quiz / Examination System')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Online Quiz / Examination System')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </article>
 
-        <article
-            class="project-card"
-            data-name="simple calculator">
+        <article class="project-card" data-name="interactive image gallery">
+          <div class="project-image">
+            <img
+              src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80"
+              alt="Interactive Image Gallery"
+            />
+          </div>
 
-            <div class="project-image">
+          <div class="project-content">
+            <span class="project-category"> UI / JAVASCRIPT </span>
 
-                <img
-                    src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?auto=format&fit=crop&w=900&q=80"
-                    alt="Simple Calculator">
+            <h3>Interactive Image Gallery</h3>
 
+            <p>
+              Create a responsive image gallery with categories, filters and
+              image preview features.
+            </p>
+
+            <div class="project-meta">
+              <span>
+                <i class="fa-solid fa-signal"></i>
+                Intermediate
+              </span>
+
+              <span>
+                <i class="fa-regular fa-clock"></i>
+                4-6 Days
+              </span>
             </div>
 
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    JAVASCRIPT
-                </span>
-
-                <h3>
-                    Simple Calculator
-                </h3>
-
-                <p>
-                    Create a responsive calculator with
-                    clean UI and functional arithmetic
-                    operations.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Beginner
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        2-3 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Simple Calculator')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Simple Calculator')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
+            <div class="technologies">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
             </div>
 
+            <div class="project-actions">
+              <button
+                type="button"
+                class="secondary-btn"
+                onclick="showProject('Interactive Image Gallery')"
+              >
+                View Details
+              </button>
+
+              <button
+                type="button"
+                class="primary-btn"
+                onclick="startProject('Interactive Image Gallery')"
+              >
+                Start Project
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
         </article>
-
-        <article
-            class="project-card"
-            data-name="movie search app">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=900&q=80"
-                    alt="Movie Search App">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    API PROJECT
-                </span>
-
-                <h3>
-                    Movie Search App
-                </h3>
-
-                <p>
-                    Build a movie discovery application
-                    with search, posters, ratings and
-                    movie information.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Intermediate
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        5-7 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Movie Search App')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Movie Search App')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-        <article
-            class="project-card"
-            data-name="e-commerce mini-store">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"
-                    alt="E-Commerce Mini Store">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    FRONTEND DEVELOPMENT
-                </span>
-
-                <h3>
-                    E-Commerce Mini-Store
-                </h3>
-
-                <p>
-                    Design a modern online store with
-                    products, pricing, cart interactions
-                    and responsive layouts.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Intermediate
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        7-10 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('E-Commerce Mini-Store')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('E-Commerce Mini-Store')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-        <article
-            class="project-card"
-            data-name="to-do task manager">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=900&q=80"
-                    alt="To Do Task Manager">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    FRONTEND DEVELOPMENT
-                </span>
-
-                <h3>
-                    To-Do / Task Manager
-                </h3>
-
-                <p>
-                    Create a productivity application
-                    to add, edit, complete and delete
-                    daily tasks.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Beginner
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        3-5 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('To-Do / Task Manager')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('To-Do / Task Manager')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-        <article
-            class="project-card"
-            data-name="expense tracker">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80"
-                    alt="Expense Tracker">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    JAVASCRIPT
-                </span>
-
-                <h3>
-                    Expense Tracker
-                </h3>
-
-                <p>
-                    Manage income and expenses with
-                    categories, totals and an interactive
-                    dashboard.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Intermediate
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        5-7 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Expense Tracker')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Expense Tracker')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-        <article
-            class="project-card"
-            data-name="online quiz examination system">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80"
-                    alt="Online Quiz Examination System">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    WEB APPLICATION
-                </span>
-
-                <h3>
-                    Online Quiz / Examination System
-                </h3>
-
-                <p>
-                    Develop an interactive online exam
-                    system with questions, timer,
-                    submission and instant results.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Advanced
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        7-10 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Online Quiz / Examination System')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Online Quiz / Examination System')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-        <article
-            class="project-card"
-            data-name="interactive image gallery">
-
-            <div class="project-image">
-
-                <img
-                    src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=900&q=80"
-                    alt="Interactive Image Gallery">
-
-            </div>
-
-
-            <div class="project-content">
-
-                <span class="project-category">
-                    UI / JAVASCRIPT
-                </span>
-
-                <h3>
-                    Interactive Image Gallery
-                </h3>
-
-                <p>
-                    Create a responsive image gallery with
-                    categories, filters and image preview
-                    features.
-                </p>
-
-
-                <div class="project-meta">
-
-                    <span>
-                        <i class="fa-solid fa-signal"></i>
-                        Intermediate
-                    </span>
-
-                    <span>
-                        <i class="fa-regular fa-clock"></i>
-                        4-6 Days
-                    </span>
-
-                </div>
-
-
-                <div class="technologies">
-
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-
-                </div>
-
-
-                <div class="project-actions">
-
-                    <button
-                        type="button"
-                        class="secondary-btn"
-                        onclick="showProject('Interactive Image Gallery')">
-
-                        View Details
-
-                    </button>
-
-
-                    <button
-                        type="button"
-                        class="primary-btn"
-                        onclick="startProject('Interactive Image Gallery')">
-
-                        Start Project
-
-                        <i class="fa-solid fa-arrow-right"></i>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-</section>
-
-<div
-    id="projectModal"
-    class="modal">
-
-    <div class="modal-content">
-
-        <button
-            type="button"
-            class="modal-close"
-            onclick="closeProjectModal()">
-
-            &times;
-
+      </div>
+    </section>
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <button type="button" class="modal-close close-btn" onclick="closeProjectModal()">
+          &times;
         </button>
 
+        <h2 id="projectModalTitle">Project Details</h2>
 
-        <h2 id="projectModalTitle">
-            Project Details
-        </h2>
+        <p id="projectModalText">Project information will appear here.</p>
 
+        <button type="button" class="primary-btn" onclick="closeProjectModal()">
+          Start Building
 
-        <p id="projectModalText">
-            Project information will appear here.
-        </p>
-
-
-        <button
-            type="button"
-            class="primary-btn"
-            onclick="closeProjectModal()">
-
-            Start Building
-
-            <i class="fa-solid fa-arrow-right"></i>
-
+          <i class="fa-solid fa-arrow-right"></i>
         </button>
-
+      </div>
     </div>
 
-</div>
-
-<div
-    id="applicationModal"
-    class="modal">
-
-    <div class="modal-content">
-
-        <button
-            type="button"
-            class="modal-close"
-            onclick="closeApplication()">
-
-            &times;
-
+    <div id="applicationModal" class="modal">
+      <div class="modal-content">
+        <button type="button" class="modal-close" onclick="closeApplication()">
+          &times;
         </button>
 
-
-        <h2>
-            Apply Now
-        </h2>
-
+        <h2>Apply Now</h2>
 
         <form onsubmit="submitApplication(event)">
+          <input type="text" id="appName" placeholder="Your Name" required />
 
-            <input
-                type="text"
-                id="appName"
-                placeholder="Your Name"
-                required>
+          <input type="email" id="appEmail" placeholder="Your Email" required />
 
+          <select id="appProgram" required>
+            <option value="">Select Program</option>
 
-            <input
-                type="email"
-                id="appEmail"
-                placeholder="Your Email"
-                required>
+            <option value="Internship">Internship</option>
 
+            <option value="Training">Training</option>
 
-            <select
-                id="appProgram"
-                required>
+            <option value="Workshop">Workshop</option>
 
-                <option value="">
-                    Select Program
-                </option>
+            <option value="Project">Project</option>
+          </select>
 
-                <option value="Internship">
-                    Internship
-                </option>
+          <button type="submit" class="primary-btn">
+            Submit Application
 
-                <option value="Training">
-                    Training
-                </option>
-
-                <option value="Workshop">
-                    Workshop
-                </option>
-
-                <option value="Project">
-                    Project
-                </option>
-
-            </select>
-
-
-            <button
-                type="submit"
-                class="primary-btn">
-
-                Submit Application
-
-                <i class="fa-solid fa-paper-plane"></i>
-
-            </button>
-
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
         </form>
-
+      </div>
     </div>
-
-</div>
-<div id="footer-container"></div>
-<script src="../js/programProjectScripts.js"></script>
- <script src="../js/includes.js"></script>
+    <div id="footer-container"></div>
+    <script src="../js/programProjectScripts.js"></script>
+    <script src="../js/includes.js"></script>
     <script src="../js/main.js"></script>
-
-</body>
-
+  </body>
 </html>
