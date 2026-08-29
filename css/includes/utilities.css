@@ -1,0 +1,104 @@
+/* ==========================================================================
+   COMMON UTILITIES & BUTTONS
+   ========================================================================== */
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.bg-white {
+    width: 100%;
+    background: var(--cream);
+}
+
+.section-label {
+    color: var(--accent);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+    color: var(--primary);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+/* BUTTON SYSTEM */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-gold,
+.primary-button {
+    color: var(--primary);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    box-shadow: 0 8px 20px rgba(201, 162, 75, 0.18);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-gold:hover,
+.primary-button:hover {
+    transform: translateY(-2px);
+    background: #D4AF5E;
+    box-shadow: 0 12px 28px rgba(201, 162, 75, 0.28);
+}
+
+.btn-outline,
+.secondary-button {
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid rgba(11, 37, 69, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.btn-outline:hover,
+.secondary-button:hover {
+    color: var(--white);
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
