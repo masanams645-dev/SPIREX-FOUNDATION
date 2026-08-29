@@ -417,7 +417,7 @@
     padding: 12px 28px;
     border-radius: 7px;
     background: var(--gold);
-    color: white;
+    color: rgb(168, 63, 63);
     font-family: inherit;
     font-size: 12px;
     font-weight: 700;
@@ -454,4 +454,57 @@
     .application-card {
         padding: 23px;
     }
+}
+
+/* --- Submit Application Button --- */
+button[type="submit"],
+.submit-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  color: #000000 !important;              /* Black text */
+  background-color: #f3f4f6 !important;   /* Neutral light background */
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  padding: 12px 28px !important;
+  border-radius: 8px !important;
+  border: 1.5px solid transparent !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+}
+
+button[type="submit"]:hover,
+.submit-btn:hover {
+  background-color: #d4af37 !important;   /* Classic Gold background */
+  border-color: #c59b27 !important;       /* Gold border */
+  color: #000000 !important;              /* Keeps text black */
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.45) !important; /* Gold glow box */
+  transform: translateY(-2px);
+}
+
+/* --- Success Box "Done" Button --- */
+.success-box button {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #000000 !important;              /* Black text */
+  background-color: #f3f4f6 !important;   /* Neutral light background */
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  padding: 10px 32px !important;
+  border-radius: 8px !important;
+  border: 1.5px solid #d1d5db !important;
+  cursor: pointer !important;
+  margin-top: 18px !important;
+  transition: all 0.3s ease !important;
+  outline: none !important;
+}
+
+/* Hover effect on Done Button (Gold Box) */
+.success-box button:hover {
+  background-color: #d4af37 !important;   /* Classic Gold background */
+  border-color: #c59b27 !important;       /* Gold border */
+  color: #000000 !important;              /* Keeps text black */
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.5) !important; /* Gold glow box */
+  transform: translateY(-2px);
 }
