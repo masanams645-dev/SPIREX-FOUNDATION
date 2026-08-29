@@ -29,10 +29,6 @@
     margin-right: auto;
 }
 
-.navbar-logo img {
-    width: 145px;
-    height: auto;
-}
 
 .nav-links {
     display: flex;
