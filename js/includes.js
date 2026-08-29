@@ -1,6 +1,10 @@
 // includes.js
 // Responsible ONLY for fetching and injecting HTML component files.
 // Knows nothing about navbar behavior, menus, or click events.
+//
+// Paths below are ROOT-RELATIVE (start with "/"), so this works the
+// same whether it's called from index.html at the root, or from a
+// page nested inside /pages/, /pages/internships/, etc.
 
 async function loadComponent(containerId, filePath) {
 
@@ -37,7 +41,7 @@ async function loadComponents() {
     // so it becomes interactive without waiting on the rest.
     await loadComponent(
         "navbar-container",
-        "components/navbar.html"
+        "/components/navbar.html"
     );
 
     document.dispatchEvent(new Event("navbarLoaded"));
@@ -46,19 +50,23 @@ async function loadComponents() {
     // Everything else loads after, then announces itself once
     // ALL of them are done — this is what covers icons inside
     // the hero, cards, and footer sections.
-    await loadComponent(
-        "hero-container",
-        "components/hero.html"
-    );
+    //
+    // Note: not every page has all of these containers, so we
+    // only try to load a piece if that container actually exists
+    // on the current page (loadComponent already checks this,
+    // but we guard here too to avoid unnecessary fetch attempts).
 
-    await loadComponent(
-        "cards-container",
-        "components/cards.html"
-    );
+    if (document.getElementById("hero-container")) {
+        await loadComponent("hero-container", "/components/hero.html");
+    }
+
+    if (document.getElementById("cards-container")) {
+        await loadComponent("cards-container", "/components/cards.html");
+    }
 
     await loadComponent(
         "footer-container",
-        "components/footer.html"
+        "/components/footer.html"
     );
 
     document.dispatchEvent(new Event("componentsLoaded"));
