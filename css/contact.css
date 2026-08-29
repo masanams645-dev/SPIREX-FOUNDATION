@@ -1,0 +1,386 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+    background: #fbf3e4;
+    min-height: 720px;
+    padding: 70px 6% 75px;
+    color: #102a43;
+}
+
+
+/* =========================================
+   CONTACT HEADING
+========================================= */
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.contact-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 17px;
+    border: 1px solid #e5c77f;
+    border-radius: 30px;
+    background: #fff8e9;
+    color: #102a43;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.contact-tag span {
+    color: #d9a52b;
+    font-size: 11px;
+}
+
+.contact-heading h1 {
+    margin: 17px 0 10px;
+    color: #102a43;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.heading-line {
+    width: 55px;
+    height: 4px;
+    background: #d9a52b;
+    border-radius: 5px;
+    margin: 0 auto 20px;
+}
+
+.contact-heading p {
+    margin: 0;
+    color: #607286;
+    font-size: clamp(14px, 2vw, 16px); /* FIXED: Was 2px (invisible) */
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   MAIN CONTACT CONTAINER
+========================================= */
+
+.contact-container {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+
+    column-gap: 80px;
+    align-items: start;
+}
+
+
+/* =========================================
+   CONTACT DETAILS - LEFT
+========================================= */
+
+.contact-details {
+    padding-top: 4px;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #dfd3c0;
+}
+
+.detail-icon {
+    width: 45px;
+    height: 45px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #fff0d0;
+    color: #d29d27;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.detail-item h3 {
+    margin: 0 0 4px;
+
+    color: #102a43;
+    font-size: clamp(16px, 2.5vw, 18px); /* FIXED: Scaled down from 25px */
+    font-weight: 700;
+}
+
+.detail-item p {
+    margin: 0;
+
+    color: #617286;
+    font-size: clamp(13px, 2vw, 14px); /* FIXED: Scaled down from 20px */
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FOLLOW US
+========================================= */
+
+.follow-section {
+    margin-top: 37px;
+}
+
+.follow-section h3 {
+    margin: 0 0 18px;
+
+    color: #181719;
+    font-size: clamp(18px, 2.5vw, 20px); /* FIXED: Scaled down from 28px */
+    font-weight: 700;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.linkedin {
+    background: #0a66c2;
+}
+
+.social-icons .instagram {
+    background: linear-gradient(135deg,
+        #833ab4 0%,
+        #fd1d1d 50%,
+        #fcb045 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.instagram-circle {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+}
+
+.instagram-dot {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 3px;
+    right: 3px;
+}
+
+.social-icons .instagram:hover {
+   background: linear-gradient(135deg,
+        #833ab4 0%,
+        #fd1d1d 50%,
+        #fcb045 100%);
+    transform: translateY(-3px);
+}
+
+.mail {
+    background: #303537;
+}
+
+
+/* =========================================
+   CONTACT FORM - RIGHT
+========================================= */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    width: 100%;
+}
+
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+
+    border: 1px solid #e1ddd5;
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    padding: 17px 18px;
+
+    color: #102a43;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.contact-form input {
+    height: 57px;
+}
+
+.contact-form textarea {
+    min-height: 205px;
+    resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #8993a0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #d9a52b;
+
+    box-shadow: 0 0 0 3px rgba(217, 165, 43, 0.12);
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.contact-form button {
+    width: 100%;
+    height: 57px;
+
+    border: none;
+    border-radius: 7px;
+
+    background: #d9a52b;
+    color: #102a43;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.contact-form button:hover {
+    background: #c99320;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-page {
+        padding: 60px 5% 70px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 55px;
+    }
+
+    .contact-details {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-page {
+        padding: 40px 5% 50px;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .contact-form textarea {
+        min-height: 160px;
+    }
+
+    .social-icons a {
+        width: 39px;
+        height: 39px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,154 @@
+@import url("./includes/Variables.css");
+@import url("./includes/Reset.css");
+@import url("./includes/utilities.css");
+@import url("./includes/components.css");
+@import url("./includes/responsive.css");
+
+/* 1. ROOT VARIABLES */
+
+:root {
+    --primary: #0B2545;
+    --dark: #081B34;
+    --accent: #C9A24B;
+    --navbar: #111827;
+
+
+    --cream: #FBF3DF;
+    --white: #FFFFFF;
+
+
+    --text: #3F3A34;
+    --text-light: #6F6A62;
+    --text-dark: #1F1A14;
+
+    --border: rgba(11, 37, 69, 0.12);
+
+    --card-shadow: 0 5px 20px rgba(8, 27, 52, 0.08);
+    --card-hover-shadow: 0 15px 40px rgba(8, 27, 52, 0.12);
+
+    --radius-lg: 20px;
+}
+
+
+/* 2. RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    font-family: "Poppins", sans-serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.6;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* 3. COMMON CONTAINER */
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* 4. BUTTONS */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-gold {
+    color: var(--primary);
+    background: var(--accent);
+    border: 1px solid var(--accent);
+    box-shadow: 0 8px 20px rgba(201, 162, 75, 0.18);
+}
+
+.btn-gold:hover {
+    transform: translateY(-2px);
+    background: #D4AF5E;
+    box-shadow: 0 12px 28px rgba(201, 162, 75, 0.28);
+}
+
+.btn-outline {
+    color: var(--primary);
+    background: transparent;
+    border: 1px solid rgba(11, 37, 69, 0.25);
+}
+
+.btn-outline:hover {
+    color: var(--white);
+    background: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+/* 13. BACKGROUNDS */
+
+.bg-white {
+    width: 100%;
+    background: var(--cream);
+}
+
+
+

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apply | SpireX Foundation</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/application.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <script src="https://unpkg.com/lucide@latest"></script>
+
+</head>
+
+
+<body>
+    <div id="navbar-container"></div>
+
+  
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="application-hero">
+
+        <div class="section-label">
+            ★ INTERNSHIP APPLICATION
+        </div>
+
+
+        <h1>
+            Start Your
+            <span>SpireX Journey.</span>
+        </h1>
+
+
+        <p>
+            Take the first step toward gaining practical
+            experience and building your future.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= APPLICATION ================= -->
+
+    <section class="application-section">
+
+        <div class="application-container">
+
+
+            <!-- LEFT INFORMATION -->
+
+            <div class="application-info">
+
+                <div class="section-label">
+                    ★ JOIN SPIREX
+                </div>
+
+
+                <h2>
+                    Build. Learn.
+                    <span>Grow.</span>
+                </h2>
+
+
+                <p>
+                    Apply for a SpireX internship and get the
+                    opportunity to work on practical projects,
+                    develop valuable skills and learn with
+                    experienced mentors.
+                </p>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Real-World Projects
+                        </h3>
+
+                        <p>
+                            Gain hands-on experience by working
+                            on practical projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Mentor Support
+                        </h3>
+
+                        <p>
+                            Receive guidance from mentors
+                            throughout your internship.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Career Development
+                        </h3>
+
+                        <p>
+                            Build technical and professional
+                            skills for your future career.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Certificate
+                        </h3>
+
+                        <p>
+                            Receive a certificate after
+                            successful completion.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="application-card">
+
+                <div class="form-heading">
+
+                    <h2>
+                        Internship Application
+                    </h2>
+
+                    <p>
+                        Fill in your details to apply.
+                    </p>
+
+                </div>
+
+
+                <form id="applicationForm">
+
+
+                    <!-- NAME -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="firstName">
+                                First Name *
+                            </label>
+
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required
+                                minlength="2">
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="lastName">
+                                Last Name *
+                            </label>
+
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required
+                                minlength="2">
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address *
+                        </label>
+
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number *
+                        </label>
+
+                        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" pattern="[0-9]{10}"
+                            maxlength="10" required>
+
+                        <small class="field-note">
+                            Enter a valid 10-digit mobile number.
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- COLLEGE -->
+
+                    <div class="form-group">
+
+                        <label for="college">
+                            College / University *
+                        </label>
+
+                        <input type="text" id="college" name="college" placeholder="Enter your college/university"
+                            required>
+
+                    </div>
+
+
+
+                    <!-- COURSE -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="course">
+                                Course *
+                            </label>
+
+                            <input type="text" id="course" name="course" placeholder="e.g. B.Tech" required>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="year">
+                                Current Year *
+                            </label>
+
+                            <select id="year" name="year" required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1">
+                                    1st Year
+                                </option>
+
+                                <option value="2">
+                                    2nd Year
+                                </option>
+
+                                <option value="3">
+                                    3rd Year
+                                </option>
+
+                                <option value="4">
+                                    4th Year
+                                </option>
+
+                                <option value="graduate">
+                                    Graduate
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DOMAIN -->
+
+                    <div class="form-group">
+
+                        <label for="domain">
+                            Internship Domain *
+                        </label>
+
+                        <select id="domain" name="domain" required>
+
+                            <option value="">
+                                Select internship domain
+                            </option>
+
+                            <option value="web">
+                                Web Development
+                            </option>
+
+                            <option value="app">
+                                App Development
+                            </option>
+
+                            <option value="ai">
+                                AI & Data Science
+                            </option>
+
+                            <option value="cyber">
+                                Cyber Security
+                            </option>
+
+                            <option value="uiux">
+                                UI/UX Design
+                            </option>
+
+                            <option value="other">
+                                Other Programs
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- DURATION -->
+
+                    <div class="form-group">
+
+                        <label for="duration">
+                            Preferred Duration *
+                        </label>
+
+                        <select id="duration" name="duration" required>
+
+                            <option value="">
+                                Select duration
+                            </option>
+
+                            <option value="4">
+                                4 Weeks
+                            </option>
+
+                            <option value="8">
+                                8 Weeks
+                            </option>
+
+                            <option value="12">
+                                12 Weeks
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- MODE -->
+
+                    <div class="form-group">
+
+
+
+
+
+
+
+
+                        <!-- SKILLS -->
+
+                        <div class="form-group">
+
+                            <label for="skills">
+                                Skills / Technologies
+                            </label>
+
+                            <input type="text" id="skills" name="skills"
+                                placeholder="e.g. HTML, CSS, JavaScript, Python">
+
+                        </div>
+
+
+
+                        <!-- MESSAGE -->
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Why do you want to join SpireX? *
+                            </label>
+
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell us about your interests, skills and career goals..." minlength="30"
+                                required></textarea>
+
+                            <small class="field-note">
+                                Minimum 30 characters.
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- RESUME -->
+
+                        <div class="form-group">
+
+                            <label for="resume">
+                                Upload Resume *
+                            </label>
+
+
+                            <div class="file-upload">
+
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+
+                                <label for="resume">
+
+                                    <span class="upload-icon">
+                                        ↑
+                                    </span>
+
+
+                                    <strong>
+                                        Upload your resume
+                                    </strong>
+
+
+                                    <small>
+                                        PDF, DOC or DOCX
+                                    </small>
+
+                                </label>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- TERMS -->
+
+                        <label class="checkbox">
+
+                            <input type="checkbox" id="agreement" required>
+
+                            <span>
+                                I confirm that the information provided
+                                by me is accurate and complete.
+                            </span>
+
+                        </label>
+
+
+
+                        <!-- SUBMIT -->
+
+                        <button type="submit" class="submit-btn">
+
+                            Submit Application →
+
+                        </button>
+
+
+                        <p class="form-note">
+
+                            By submitting this application, you agree
+                            to be contacted by the SpireX Foundation team.
+
+                        </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SUCCESS POPUP ================= -->
+
+    <div class="success-overlay" id="successMessage">
+
+        <div class="success-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <h2>
+                Application Submitted!
+            </h2>
+
+
+            <p>
+                Thank you for applying to SpireX Foundation.
+                Our team will review your application and
+                contact you with the next steps.
+            </p>
+
+
+            <button onclick="closeSuccess()">
+
+                Done
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= FOOTER ================= -->
+  <div id="footer-container"></div>
+
+
+   <script src="../js/includes.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>

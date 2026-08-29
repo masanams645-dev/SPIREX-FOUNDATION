@@ -1,0 +1,435 @@
+/* ================= HERO ================= */
+.internship-hero {
+    min-height: 500px;
+    padding: 85px 7%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background:
+        radial-gradient(circle at 85% 50%, #f4ead2, transparent 32%),
+        var(--cream);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    color: var(--navy);
+    font-size: clamp(52px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.hero-content h1 span {
+    color: var(--gold);
+   
+}
+
+.hero-content p {
+    color: var(--muted);
+    max-width: 540px;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    
+}
+
+.hero-visual {
+    min-height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    width: 320px;
+    padding: 35px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(10, 30, 50, .08);
+}
+
+.hero-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gold-light);
+    color: var(--gold);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 22px;
+}
+
+.hero-card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.hero-card p {
+    color: var(--muted);
+    font-size: 12px;
+}
+
+/* ================= WHY SECTION ================= */
+.why-section {
+    padding: 75px 7%;
+    background: white;
+    display: grid;
+    grid-template-columns: .9fr 1.6fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.why-intro h2 {
+    color: var(--navy);
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.why-intro p {
+    color: var(--muted);
+    font-size: 20px;
+    max-width: 390px;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+}
+
+.benefit-card {
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 22px;
+    min-height: 190px;
+    background: #fff;
+    transition: .2s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(10, 30, 50, .07);
+}
+
+.icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: var(--gold-light);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.benefit-card h3 {
+    color: var(--navy);
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.benefit-card p {
+    color: var(--muted);
+    font-size: px;
+}
+
+/* ================= DOMAINS ================= */
+.domains-section {
+    padding: 80px 7%;
+    background: var(--cream);
+}
+
+.domain-grid {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.domain-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 24px;
+    min-height: 230px;
+    transition: .25s;
+}
+
+.domain-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(10, 30, 50, .08);
+}
+
+.domain-card h3 {
+    color: var(--navy);
+    font-size: 16px;
+    margin-bottom: 9px;
+}
+
+.domain-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.domain-link {
+    display: block;
+    margin-top: 22px;
+    color: var(--gold);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* ================= DETAILS ================= */
+.details-section {
+    padding: 25px 7% 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    background: var(--cream);
+}
+
+.details-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 28px;
+}
+
+.details-card h2 {
+    color: var(--navy);
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.check-list {
+    list-style: none;
+}
+
+.check-list li {
+    display: flex;
+    gap: 9px;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.check-list li span {
+    color: var(--gold);
+    font-weight: 800;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding: 11px 0;
+    border-bottom: 1px solid #eeeeea;
+    font-size: 11px;
+}
+
+.detail-row strong {
+    color: var(--navy);
+    font-size: 14px;
+}
+
+.detail-row span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ================= OUTCOMES ================= */
+.outcomes-section {
+    padding: 80px 7%;
+    background: white;
+}
+
+.outcome-grid {
+    max-width: 1050px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.outcome-card {
+    padding: 25px;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.outcome-number {
+    color: var(--gold);
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.outcome-card h3 {
+    color: var(--navy);
+    font-size: 25px;
+    margin: 15px 0 8px;
+}
+
+.outcome-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ================= PROCESS ================= */
+.process-section {
+    padding: 80px 7%;
+    background: var(--cream);
+}
+
+.process-grid {
+    max-width: 1050px;
+    margin: 45px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.process-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 25px;
+}
+
+.process-number {
+    color: var(--gold);
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.process-card h3 {
+    color: var(--navy);
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.process-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* ================= APPLICATION CTA ================= */
+.application-cta {
+    margin: 60px 3%;
+    padding: 50px 7%;
+    background: var(--dark);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-label {
+    color: var(--gold);
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.application-cta h2 {
+    color: var(--white);
+    font-size: 33px;
+    margin: 12px 0 8px;
+}
+
+.application-cta h2 span {
+    color: var(--gold);
+}
+
+.application-cta p {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-symbol {
+    color: var(--gold);
+    font-size: 93px;
+    font-weight: 800;
+}
+
+/* ================= INTERNSHIP RESPONSIVE ================= */
+@media (max-width: 1000px) {
+    .benefit-grid,
+    .domain-grid,
+    .outcome-grid,
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .details-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .internship-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .hero-content,
+    .hero-content p,
+    .why-intro p {
+        margin: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hero-visual {
+        margin-top: 30px;
+    }
+
+    .why-section {
+        grid-template-columns: 1fr;
+    }
+
+    .why-intro {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .internship-hero h1 {
+        font-size: 4px;
+    }
+
+    .benefit-grid,
+    .domain-grid,
+    .outcome-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .application-cta {
+        padding: 35px 25px;
+    }
+
+    .cta-symbol {
+        display: none;
+    }
+}
