@@ -347,7 +347,7 @@
 }
 
 .application-cta h2 {
-    color: rgb(33, 17, 171);
+    color: var(--white);
     font-size: 33px;
     margin: 12px 0 8px;
 }
