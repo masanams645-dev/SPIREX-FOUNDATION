@@ -12,7 +12,7 @@ function goToInternship() {
 }
 
 function goToProjects() {
-    window.location.href = "project.html";
+    window.location.href = "projects.html";
 }
 
 
