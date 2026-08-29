@@ -49,7 +49,7 @@
 
 .application-info > p {
     color: var(--muted);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -74,12 +74,12 @@
 
 .benefit h3 {
     color: var(--navy);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .benefit p {
     color: var(--muted);
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* ================= APPLICATION CARD & READ-ONLY ================= */
@@ -102,7 +102,7 @@
 
 .form-heading p {
     color: var(--muted);
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .readonly-content {
@@ -160,7 +160,7 @@
 
 .application-notice strong {
     color: var(--navy);
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .application-notice p {
@@ -193,7 +193,7 @@
 .form-group label {
     display: block;
     color: var(--navy);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     margin-bottom: 7px;
 }
@@ -208,7 +208,7 @@
     background: #fcfcfa;
     color: var(--text);
     font-family: inherit;
-    font-size: 11px;
+    font-size: 14px;
     outline: none;
     transition: .2s;
 }
@@ -243,7 +243,7 @@
     display: flex !important;
     align-items: center;
     gap: 7px;
-    padding: 11px 12px;
+    padding: 14px 12px;
     border: 1px solid #deddd7;
     border-radius: 7px;
     background: #fcfcfa;
@@ -304,7 +304,7 @@
 
 .file-upload strong {
     color: var(--navy);
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .file-upload small {
