@@ -16,20 +16,21 @@
 
 .hero-content h1 {
     color: var(--navy);
-    font-size: clamp(42px, 5vw, 62px);
+    font-size: clamp(52px, 5vw, 62px);
     line-height: 1.05;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 18px;
 }
 
 .hero-content h1 span {
     color: var(--gold);
+   
 }
 
 .hero-content p {
     color: var(--muted);
     max-width: 540px;
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.8;
 }
 
@@ -37,6 +38,7 @@
     display: flex;
     gap: 12px;
     margin-top: 28px;
+    
 }
 
 .hero-visual {
@@ -91,14 +93,14 @@
 
 .why-intro h2 {
     color: var(--navy);
-    font-size: 32px;
+    font-size: 30px;
     line-height: 1.2;
     margin-bottom: 14px;
 }
 
 .why-intro p {
     color: var(--muted);
-    font-size: 13px;
+    font-size: 20px;
     max-width: 390px;
 }
 
@@ -137,13 +139,13 @@
 
 .benefit-card h3 {
     color: var(--navy);
-    font-size: 13px;
+    font-size: 20px;
     margin-bottom: 8px;
 }
 
 .benefit-card p {
     color: var(--muted);
-    font-size: 11px;
+    font-size: px;
 }
 
 /* ================= DOMAINS ================= */
@@ -175,13 +177,13 @@
 
 .domain-card h3 {
     color: var(--navy);
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 9px;
 }
 
 .domain-card p {
     color: var(--muted);
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -189,7 +191,7 @@
     display: block;
     margin-top: 22px;
     color: var(--gold);
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 700;
 }
 
@@ -211,7 +213,7 @@
 
 .details-card h2 {
     color: var(--navy);
-    font-size: 19px;
+    font-size: 29px;
     margin-bottom: 20px;
 }
 
@@ -223,7 +225,7 @@
     display: flex;
     gap: 9px;
     color: var(--muted);
-    font-size: 11px;
+    font-size: 14px;
     margin-bottom: 13px;
 }
 
@@ -242,10 +244,12 @@
 
 .detail-row strong {
     color: var(--navy);
+    font-size: 14px;
 }
 
 .detail-row span {
     color: var(--muted);
+    font-size: 14px;
 }
 
 /* ================= OUTCOMES ================= */
@@ -270,19 +274,19 @@
 
 .outcome-number {
     color: var(--gold);
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 800;
 }
 
 .outcome-card h3 {
     color: var(--navy);
-    font-size: 14px;
+    font-size: 25px;
     margin: 15px 0 8px;
 }
 
 .outcome-card p {
     color: var(--muted);
-    font-size: 11px;
+    font-size: 14px;
 }
 
 /* ================= PROCESS ================= */
@@ -308,27 +312,27 @@
 
 .process-number {
     color: var(--gold);
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 18px;
 }
 
 .process-card h3 {
     color: var(--navy);
-    font-size: 15px;
+    font-size: 21px;
     margin-bottom: 8px;
 }
 
 .process-card p {
     color: var(--muted);
-    font-size: 11px;
+    font-size: 14px;
 }
 
 /* ================= APPLICATION CTA ================= */
 .application-cta {
     margin: 60px 3%;
     padding: 50px 7%;
-    background: var(--navy);
+    background: var(--dark);
     border-radius: 16px;
     display: flex;
     justify-content: space-between;
@@ -337,14 +341,14 @@
 
 .cta-label {
     color: var(--gold);
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 800;
     letter-spacing: 1px;
 }
 
 .application-cta h2 {
-    color: white;
-    font-size: 30px;
+    color: var(--white);
+    font-size: 33px;
     margin: 12px 0 8px;
 }
 
@@ -353,14 +357,15 @@
 }
 
 .application-cta p {
-    color: #bac4cd;
-    font-size: 12px;
+    color: var(--white);
+    font-size: 18px;
     margin-bottom: 20px;
 }
 
 .cta-symbol {
     color: var(--gold);
-    font-size: 90px;
+    font-size: 93px;
+    font-weight: 800;
 }
 
 /* ================= INTERNSHIP RESPONSIVE ================= */
@@ -410,7 +415,7 @@
 
 @media (max-width: 500px) {
     .internship-hero h1 {
-        font-size: 40px;
+        font-size: 4px;
     }
 
     .benefit-grid,
