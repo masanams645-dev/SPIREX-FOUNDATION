@@ -28,7 +28,7 @@
     border-radius: 30px;
     background: #fff8e9;
     color: #102a43;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -40,10 +40,10 @@
 .contact-heading h1 {
     margin: 17px 0 10px;
     color: #102a43;
-    font-size: clamp(44px, 5vw, 58px);
-    line-height: 1.1;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
     font-weight: 800;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .heading-line {
@@ -57,7 +57,8 @@
 .contact-heading p {
     margin: 0;
     color: #607286;
-    font-size: 2px;
+    font-size: clamp(14px, 2vw, 16px); /* FIXED: Was 2px (invisible) */
+    line-height: 1.5;
 }
 
 
@@ -112,15 +113,15 @@
     background: #fff0d0;
     color: #d29d27;
 
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .detail-item h3 {
-    margin: 0 0 7px;
+    margin: 0 0 4px;
 
     color: #102a43;
-    font-size: 25px;
+    font-size: clamp(16px, 2.5vw, 18px); /* FIXED: Scaled down from 25px */
     font-weight: 700;
 }
 
@@ -128,7 +129,7 @@
     margin: 0;
 
     color: #617286;
-    font-size: 20px;
+    font-size: clamp(13px, 2vw, 14px); /* FIXED: Scaled down from 20px */
     line-height: 1.5;
 }
 
@@ -145,7 +146,7 @@
     margin: 0 0 18px;
 
     color: #181719;
-    font-size: 28px;
+    font-size: clamp(18px, 2.5vw, 20px); /* FIXED: Scaled down from 28px */
     font-weight: 700;
 }
 
@@ -168,7 +169,7 @@
     color: #ffffff;
     text-decoration: none;
 
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 700;
 
     transition: all 0.25s ease;
@@ -187,7 +188,7 @@
 }
 
 .social-icons .instagram {
-    background:linear-gradient(135deg,
+    background: linear-gradient(135deg,
         #833ab4 0%,
         #fd1d1d 50%,
         #fcb045 100%);
@@ -226,18 +227,16 @@
 }
 
 .social-icons .instagram:hover {
-   background:linear-gradient(135deg,
+   background: linear-gradient(135deg,
         #833ab4 0%,
         #fd1d1d 50%,
         #fcb045 100%);
     transform: translateY(-3px);
 }
-.mail{
+
+.mail {
     background: #303537;
 }
-
-
-
 
 
 /* =========================================
@@ -299,8 +298,7 @@
 .contact-form textarea:focus {
     border-color: #d9a52b;
 
-    box-shadow:
-        0 0 0 3px rgba(217, 165, 43, 0.12);
+    box-shadow: 0 0 0 3px rgba(217, 165, 43, 0.12);
 }
 
 
@@ -364,19 +362,11 @@
 @media (max-width: 600px) {
 
     .contact-page {
-        padding: 50px 5% 60px;
+        padding: 40px 5% 50px;
     }
 
     .contact-heading {
-        margin-bottom: 45px;
-    }
-
-    .contact-heading h1 {
-        font-size: 40px;
-    }
-
-    .contact-heading p {
-        font-size: 14px;
+        margin-bottom: 35px;
     }
 
     .input-row {
@@ -391,5 +381,6 @@
     .social-icons a {
         width: 39px;
         height: 39px;
+        font-size: 16px;
     }
 }
